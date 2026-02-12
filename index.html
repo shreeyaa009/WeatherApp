@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the weather app -->
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+<div class="main">
+    <h1 style="margin: 20px; color: black;">PAST WEATHER DATA</h1><hr>
+    <div id="pastdate">
+
+
+      </div>
+</div>
+
+    <div class="kill">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false" id="cityInput" name="weather">
+            <button> <img src="https://cdn-icons-png.flaticon.com/128/2623/2623559.png"></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <!-- Weather information section -->
+        <div class="weather">
+            <img src="https://cdn-icons-png.flaticon.com/128/10763/10763252.png" class="icon" alt="Weather Icon">
+            <h1 class="temperature">1°C</h1>
+            <h2 class="city">Nabadwip</h2>
+
+            <!-- Day and date information -->
+            <div class="daydate">
+                <div class="date">
+                    <span id="dayname">Day</span>,
+                    <span id="month">Month</span>
+                    <span id="daynum">00</span>,
+                    <span id="year">Year</span>
+                </div>
+            </div>
+
+            <!-- Additional weather details -->
+            <div class="details">
+                <!-- Add details here -->
+                <div class="yo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1594/1594826.png" alt="Humidity Icon">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="yo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/12051/12051946.png" alt="Pressure Icon">
+                    <div>
+                        <p class="pressure">1000mb</p>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+                <div class="yo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/6014/6014727.png" alt="Wind Speed Icon">
+                    <div>
+                        <p class="wind">15 km/hr</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <center class="footer" style="text-align: center; bottom: 0; width: 100%; font-size: large;
+            font-weight: bold; position: fixed; margin-bottom: 100px; color: white;"> &#169; @NAME</center>
+    </footer>
+
+    <script src="./weather.js"></script>
+
+</body>
+
+
+</html>
